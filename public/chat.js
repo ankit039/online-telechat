@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:8080");
+var socket = io.connect("http://localhost:1234");
 
 var message = document.getElementById("message");
 var handle = document.getElementById("handle");
