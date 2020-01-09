@@ -1,1 +1,7 @@
-# real_time_chat_app
+# Real Time Chat WebApp
+## Languages Used-
+ * Html
+ * Css
+ * Node.js
+ * Socket.io
+ * Javascript
