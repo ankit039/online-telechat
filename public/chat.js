@@ -17,7 +17,8 @@ message.addEventListener("keypress",function(){
 socket.on("chat",function(data){
     feedback.innerHTML = "";
     output.innerHTML += '<p><strong>' + data.handle + ':</strong>' + data.message + '</p>';
-    onclick="document.getElementById('message').value = ''";
+    document.getElementById("message").reset();
+    document.getElementById("handle").disabled = true;
 });
 
 socket.on("typing",function(data){
