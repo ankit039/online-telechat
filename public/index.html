@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Socket.io Chat Application</title>
+        <title>Online Chat</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
@@ -13,8 +13,8 @@
             </div>
             <input id="handle" type="text" placeholder="Handle"/>
             <input id="message" type="message" placeholder="Message"/>
-            <button id="btn">Send</button>
-            <input type="Text" placeholder="Made with ❤️ by Ankit Raj" disabled/>
+            <button id="btn" type="submit" onclick="document.getElementById('message').value = ''">Send</button>
+            <input type="Text" placeholder="                  Made with ❤️ by Ankit Raj" disabled/>
         </div>
         <script src="/chat.js"></script>
     </body>
