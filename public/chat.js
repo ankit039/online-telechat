@@ -1,4 +1,4 @@
-var socket = io.connect("process.env.PORT || 39");
+var socket = io.connect("https://online-telechat.herokuapp.com/");
 
 var message = document.getElementById("message");
 var handle = document.getElementById("handle");
