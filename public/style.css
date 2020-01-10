@@ -14,7 +14,7 @@ h2{
     border-radius: 2px;
 }
 #chat-window{
-    height: 400px;
+    height: 350px;
     overflow: auto;
     background: #f9f9f9;
 }
@@ -55,6 +55,11 @@ button{
     font-size: 18px;
     border: 0;
     padding: 12px 0;
-    width: 100%;
-    border-radius: 0 0 2px 2px;
+    width: 30%;
+    border-radius: 25px 25px;
+    outline: none;
+}
+#btn:hover {
+    background: #6468c4;
+    cursor: pointer;
 }
