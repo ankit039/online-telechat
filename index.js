@@ -1,7 +1,7 @@
 var express = require('express');
 var socket = require('socket.io');
 var app = express();
-var server = app.listen(39,function(){
+var server = app.listen(process.env.PORT || 39,function(){
 	//console.log("The Server is listeningto port 1234");	
 });
 

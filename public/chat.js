@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:39");
+var socket = io.connect("process.env.PORT || 39");
 
 var message = document.getElementById("message");
 var handle = document.getElementById("handle");
