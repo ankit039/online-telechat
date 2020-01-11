@@ -8,6 +8,7 @@ var feedback = document.getElementById("feedback");
 
 btn.addEventListener("click",function(){
     socket.emit("chat",{message:message.value,handle:handle.value});
+    message.value = '';
 });
 
 message.addEventListener("keypress",function(){
