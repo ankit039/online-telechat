@@ -14,6 +14,8 @@ io.on('connection',function(socket){
 	
 	socket.on("chat",function(data){
 		//console.log(data)
+		//let msg = data;
+		//console.log(msg);
 		io.sockets.emit("chat",data);
 	});
 	
