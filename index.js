@@ -2,7 +2,7 @@ var express = require('express');
 var socket = require('socket.io');
 var app = express();
 var server = app.listen(process.env.PORT || 39,function(){
-	//console.log("The Server is listeningto port 1234");	
+	//console.log("The Server is listeningto port 39");	
 });
 
 app.use(express.static('public'));
@@ -14,8 +14,6 @@ io.on('connection',function(socket){
 	
 	socket.on("chat",function(data){
 		//console.log(data)
-		//let msg = data;
-		//console.log(msg);
 		io.sockets.emit("chat",data);
 	});
 	
