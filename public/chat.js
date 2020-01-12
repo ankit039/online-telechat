@@ -1,5 +1,8 @@
 var socket = io.connect("https://online-telechat.herokuapp.com/");
 
+//http://localhost:39/ 
+//https://online-telechat.herokuapp.com/
+
 var message = document.getElementById("message");
 var handle = document.getElementById("handle");
 var btn = document.getElementById("btn");
@@ -10,7 +13,6 @@ btn.addEventListener("click",function(){
     socket.emit("chat",{message:message.value,handle:handle.value});
     message.value = '';
     handle.disabled = true;
-    
 });
 
 message.addEventListener("keypress",function(){
